@@ -1,0 +1,41 @@
+
+const HostConfig = {
+  supportsMutation: true,
+  createInstance(type, props, rootContainer, hostContext, internalHandle) {
+    //Implement it
+  },
+  createTextInstance(text, rootContainer, hostContext, internalHandle) {
+    //Implement it
+  },
+
+  appendInitialChild(parentInstance, child) {
+    //Implement it
+  },
+  appendChildToContainer(container, child) {
+    //Implement it
+  },
+
+  removeChildFromContainer(container, child) {
+    //Implement it
+  },
+
+  commitTextUpdate(textInstance, prevText, nextText) {
+    //Implement it
+  },
+
+  getRootHostContext(rootContainer) {},
+  getChildHostContext(parentHostContext, type, rootContainer) {},
+  shouldSetTextContent(type, props) {},
+  prepareForCommit(containerInfo) {},
+  clearContainer(container) {},
+  resetAfterCommit(containerInfo) {},
+  finalizeInitialChildren(instance, type, props, rootContainer, hostContext) {},
+  prepareUpdate(
+    instance,
+    type,
+    oldProps,
+    newProps,
+    rootContainerInstance,
+    currentHostContext
+  ) {},
+};
